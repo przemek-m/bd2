@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4A0A2A8D-0B20-AB45-721B-BF9A5FFA0DED" name="Wolumen">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-04 21:05:51 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="3A7E656C-51CA-9CE7-2467-62143E40C2A5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="2884894F-1D4A-1F91-DBA9-F60EDD50BF13">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-04 21:17:57 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="3A7E656C-51CA-9CE7-2467-62143E40C2A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID2" id="3DAF624E-FDD5-5549-DA55-0A0422D93679">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-04 21:49:40 UTC</createdTime>
+<generatorID>2A02ACBB-29FC-0041-DAC8-B99D9133BB12</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="3A7E656C-51CA-9CE7-2467-62143E40C2A5" value="true"/>
+</engineerTo>
+<referedAttribute>E64353A9-0801-4A06-9043-506B995AC608</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="48C0C283-9B85-426D-440D-9163F2A8B638">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-04 21:50:36 UTC</createdTime>
+<generatorID>C4448D76-5431-BCE7-862C-87948C11940D</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="3A7E656C-51CA-9CE7-2467-62143E40C2A5" value="true"/>
+</engineerTo>
+<referedAttribute>41575CA1-28BD-7BDF-D4A7-62F0AB1A4A64</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rodzaj_numeru" id="3C41F928-0002-6B70-EEFE-2BBD19182B6F">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:54:26 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="3A7E656C-51CA-9CE7-2467-62143E40C2A5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numer" id="21155D1E-1319-8961-FE93-FDA77C6A350E">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:54:42 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="3A7E656C-51CA-9CE7-2467-62143E40C2A5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E63DB4CF-362C-C03C-1E68-27DB8CE7695E" name="Wolumen PK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-04 21:50:21 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="3A7E656C-51CA-9CE7-2467-62143E40C2A5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2884894F-1D4A-1F91-DBA9-F60EDD50BF13</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

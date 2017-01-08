@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1F8E56D3-03E1-57E9-3B00-7E4C8C12C527" name="Autor">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>AD97A185-ABD3-29D8-71F4-1837BCEC6BD9</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="215E58CD-FE08-9472-ED70-1E4B8C470DDB">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>E1BBA36F-0E5F-52BC-94CA-09A3A21E51F7</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="A520E634-7132-FDDE-5777-D42B4B3D8DA8">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>30B0E109-43F4-0B79-8E8C-38A4A665BCEF</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="85522790-2CBF-52ED-F4E6-192FEFA4517C" name="Autor_PK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>A3233D1A-AA87-76FB-ADEF-1110235815F3</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="215E58CD-FE08-9472-ED70-1E4B8C470DDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1320384E-6072-7882-3DF2-50331B38B593" name="Autor__IDX">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2017-01-08 20:09:23 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="215E58CD-FE08-9472-ED70-1E4B8C470DDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

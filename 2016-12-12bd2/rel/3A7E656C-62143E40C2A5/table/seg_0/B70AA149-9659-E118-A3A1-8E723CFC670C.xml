@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B70AA149-9659-E118-A3A1-8E723CFC670C" name="Pozycja">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>EF35E286-71CA-0AE6-C256-1269E3FA5CEA</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="31DDDD0E-2F76-EADE-61CE-AFF8C2C78D9A">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>E64353A9-0801-4A06-9043-506B995AC608</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="F237E783-BB56-6B88-036E-5F7192F66939">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>112469CA-6444-63B6-1429-81C6F582E1A7</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="okladka" id="4E2E125A-0A4D-EC1F-D80F-7A90DCF9874F">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<comment>nazwa pliku</comment>
+<generatorID>0CB72D27-3792-A2BD-675B-BD317F09D908</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dzial_ID" id="9A91F1B1-9A73-2461-2D31-575E96ACB8A6">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>E0009625-2A6E-3B82-A878-64E37AC2C973</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50AC8A1D-C5AA-E828-EABE-8A9BC1CB3C66" referredColumn="322E81D5-3408-A9BF-06F8-4CF30AE51DDB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B4A76BA9-993D-B8C6-F83D-50889CB45FB4" name="Pozycja_PK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>27FA907B-23A8-D2DD-DFFE-CFE7DBC997F8</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31DDDD0E-2F76-EADE-61CE-AFF8C2C78D9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E622F6EF-B594-6191-79EB-6BDE13E38BDC" name="Pozycja__IDX">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4281329A-3AA4-9602-2B24-3C2EDC5F7C8A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="9A91F1B1-9A73-2461-2D31-575E96ACB8A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD460E28-ED23-F062-C4AA-8B52E0E3E4A7" name="Pozycja_Dzial_FK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>4281329A-3AA4-9602-2B24-3C2EDC5F7C8A</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A91F1B1-9A73-2461-2D31-575E96ACB8A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

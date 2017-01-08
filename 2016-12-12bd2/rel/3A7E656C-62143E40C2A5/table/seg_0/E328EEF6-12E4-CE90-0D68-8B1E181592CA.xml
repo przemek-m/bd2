@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E328EEF6-12E4-CE90-0D68-8B1E181592CA" name="Kara">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>7FC6BD6A-53A8-5CE6-8351-661DDA50CC59</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="kwota" id="1BB0EE57-D461-9E21-AFBF-0979EE3DACE1">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>5448D9A3-153F-AB85-FB44-E1B6B314DC93</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Wypozyczenie_ID" id="EB69DC4F-CAB8-2DAE-E6A3-36E0CFB61CE9">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>2EA3A393-3240-8998-C9B0-9E08A4022F6C</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACB56D1C-FC57-4669-478F-865DFC907C2C" referredColumn="91C9BB66-DA68-6DB4-1A98-CF1AF9FF15EF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92ACB406-B175-2F24-A614-FFA3FE07F4AC" name="Kara_PK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>652BAB53-D304-476A-4D8D-7B30C5AD2F11</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB69DC4F-CAB8-2DAE-E6A3-36E0CFB61CE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FEE0F30-B40A-85FA-A5D9-345395348EC5" name="Kara__IDX">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2017-01-08 20:14:37 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB69DC4F-CAB8-2DAE-E6A3-36E0CFB61CE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8988C368-D829-8469-FB81-8A6D72645E48" name="Kara_Wypozyczenie_FK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>9F672BED-8AE6-3AE2-4692-68B211973460</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB69DC4F-CAB8-2DAE-E6A3-36E0CFB61CE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

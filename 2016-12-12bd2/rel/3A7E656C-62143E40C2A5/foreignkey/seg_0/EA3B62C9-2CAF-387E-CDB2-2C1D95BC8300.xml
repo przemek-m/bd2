@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EA3B62C9-2CAF-387E-CDB2-2C1D95BC8300" containerWithKeyObject="38B61678-0105-C799-30FE-A287D22E1AB1" localFKIndex="B2397A65-6E83-CBE9-D7AC-5FDF5AFD2830" name="Wypozyczenie_Czytelnik_FK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>F4A9A025-9B3B-EC83-3BD1-ADB8083F14DC</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B50623E3-9768-D666-AEB5-DC9AA55C9F11</referredTableID>
+<keyObject>FF110ADD-7736-979B-C249-713BC25823BF</keyObject>
+<referredKeyID>FF110ADD-7736-979B-C249-713BC25823BF</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

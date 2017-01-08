@@ -1,6 +1,6 @@
 from random import randint
-from faker import Faker
-fake = Faker()
+from faker import Factory
+fake = Factory.create('pl_PL')
 
 
 N_Autor = 5
@@ -8,6 +8,7 @@ N_Dzial = 20
 N_Pozycja = 100
 N_Seria = 10
 N_Wolumen = N_Pozycja * 3
+N_Czytelnik = 10
 
 
 def autor():
@@ -69,6 +70,25 @@ def wolumen():
                 ))
 
 
+def czytelnik():
+    with open("czytelnik.sql", "w") as f:
+        for i in range(1, N_Czytelnik+1):
+            f.write(
+                "insert into Czytelnik (ID, imie, nazwisko, email, haslo) values ({}, \'{}\', \'{}\', \'{}\', \'{}\');\n".format(
+                    i, fake.first_name(), fake.last_name(), fake.email(), fake.word()
+                ))
+
+
+def dane_czytelnika():
+    with open("dane_czytelnika.sql", "w") as f:
+        for i in range(1, N_Czytelnik+1):
+            f.write(
+                "insert into DaneCzytelnika (kod_pocztowy, miasto, ulica, numer_budynku, numer_lokalu, Czytelnik_ID) values (\'{}\', \'{}\', \'{}\', {}, {}, {});\n".format(
+                    fake.postcode(), fake.city(), fake.street_name(), randint(1,100), randint(1,100), i
+                ))
+
+
+
 def generate():
     autor()
     dzial()
@@ -76,3 +96,5 @@ def generate():
     pozycja_autorzy()
     seria()
     wolumen()
+    czytelnik()
+    dane_czytelnika()

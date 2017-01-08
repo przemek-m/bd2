@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="843B31E9-6C6D-E842-9E17-526D9A619C6E" name="DaneCzytelnika">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-04 21:55:07 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="69AD1F6F-2EAB-2A00-AF6F-34A64154293D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pesel" id="209EDC48-9053-1DCA-649A-C8AE42DD7DC6">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-04 21:55:29 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="69AD1F6F-2EAB-2A00-AF6F-34A64154293D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefon" id="16E3880F-9277-9174-2261-FA3D67C31004">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-05 16:28:48 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="69AD1F6F-2EAB-2A00-AF6F-34A64154293D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="kod_pocztowy" id="EB193D06-FD77-5A26-AA83-69F891D2FE3E">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-04 21:55:44 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="69AD1F6F-2EAB-2A00-AF6F-34A64154293D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="miasto" id="C0A347DD-83F4-2950-FFCA-CA2F0136C8E9">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-11 19:18:32 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="69AD1F6F-2EAB-2A00-AF6F-34A64154293D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ulica" id="1B802331-C0E1-C0C4-B156-4B0BF2F6A254">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-11 19:18:44 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="69AD1F6F-2EAB-2A00-AF6F-34A64154293D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numer_budynku" id="E9946B82-BE63-38AD-3A09-B5D45AC4E4FA">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-11 19:18:56 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="69AD1F6F-2EAB-2A00-AF6F-34A64154293D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numer_lokalu" id="53A35EF3-5DA0-88CC-B223-B5C2AE81C06F">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-11 19:19:28 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="69AD1F6F-2EAB-2A00-AF6F-34A64154293D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="35F783AD-00F7-B760-A3B7-DE8CB7AAD2EE" name="DaneCzytelnika PK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-04 21:56:11 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="69AD1F6F-2EAB-2A00-AF6F-34A64154293D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
+</Entity>

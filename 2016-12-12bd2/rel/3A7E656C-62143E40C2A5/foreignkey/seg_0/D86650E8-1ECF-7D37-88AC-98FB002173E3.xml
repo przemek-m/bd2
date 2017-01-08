@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D86650E8-1ECF-7D37-88AC-98FB002173E3" containerWithKeyObject="38B61678-0105-C799-30FE-A287D22E1AB1" localFKIndex="2EF5733F-E16D-E0E6-592D-F9B55ACA6763" name="Wypozyczenie_Wolumen_FK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>56A711C3-D06A-951F-4167-EB4E37D4697C</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FCCEF02C-4144-F580-FF8F-B44FD0795311</referredTableID>
+<keyObject>DDC1E63E-B929-55AD-838E-E7C096EB6E20</keyObject>
+<referredKeyID>DDC1E63E-B929-55AD-838E-E7C096EB6E20</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

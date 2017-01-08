@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="38B61678-0105-C799-30FE-A287D22E1AB1" name="Wypozyczenie">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>EB444896-D63B-0133-089C-1A386173972E</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="91C9BB66-DA68-6DB4-1A98-CF1AF9FF15EF">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>A1748B73-01DF-09B2-50BB-B2B8E12575FD</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data" id="7A30C4DD-D490-BFA3-A0CE-9C3D95386B85">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>3BACD7AE-2880-DA41-2F17-660D10A4CFFF</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="termin_zwrotu" id="28F30051-A46E-4F2B-A88F-A90F8E99DA09">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>3A18BFFB-D60D-78C2-1E14-3AB1E895E5F3</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_zwrotu" id="720E4A2C-59CB-5CD1-AA27-82773483EEC0">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>851246DE-7D14-2095-9708-5AA637CB5E01</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Wolumen_ID" id="91B21885-CBE4-42C1-D3C9-A6653AA59CCE">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>1838804B-651A-EE11-0592-B206829E1BF3</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D86650E8-1ECF-7D37-88AC-98FB002173E3" referredColumn="4C9B1830-9D91-39CD-1C89-E52B5DFED6DF"/>
+</associations>
+</Column>
+<Column name="Czytelnik_ID" id="B213E205-D3A7-5130-96B4-92129BBD103F">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 17:12:25 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA3B62C9-2CAF-387E-CDB2-2C1D95BC8300" referredColumn="9D4BBFF2-649D-B1EE-C550-9C76801C3E73"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="621C7D3A-C719-F4D2-AA37-186C7096DAB8" name="Wypozyczenie_PK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>884CF63A-4764-9D29-B69E-323BB08C212F</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91C9BB66-DA68-6DB4-1A98-CF1AF9FF15EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="829BB4E0-8CC4-3C69-3D25-A615E1120DBE" name="Wypozyczenie__IDX">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>56A711C3-D06A-951F-4167-EB4E37D4697C</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="91B21885-CBE4-42C1-D3C9-A6653AA59CCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="706A50F1-DC06-C058-9E52-1437186678CD" name="Wypozyczenie__IDXv1v1">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2017-01-08 20:15:30 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A30C4DD-D490-BFA3-A0CE-9C3D95386B85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="132EFDAC-98BD-26A1-AB7C-D8FD77DDEC54" name="Wypozyczenie__IDXv1v2">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2017-01-08 20:15:30 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28F30051-A46E-4F2B-A88F-A90F8E99DA09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2397A65-6E83-CBE9-D7AC-5FDF5AFD2830" name="Wypozyczenie_Czytelnik_FK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>F4A9A025-9B3B-EC83-3BD1-ADB8083F14DC</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B213E205-D3A7-5130-96B4-92129BBD103F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2EF5733F-E16D-E0E6-592D-F9B55ACA6763" name="Wypozyczenie_Wolumen_FK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>56A711C3-D06A-951F-4167-EB4E37D4697C</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91B21885-CBE4-42C1-D3C9-A6653AA59CCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

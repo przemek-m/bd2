@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7FC6BD6A-53A8-5CE6-8351-661DDA50CC59" name="Kara">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-04 22:01:50 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="3A7E656C-51CA-9CE7-2467-62143E40C2A5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="kwota" id="5448D9A3-153F-AB85-FB44-E1B6B314DC93">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-04 22:01:55 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="3A7E656C-51CA-9CE7-2467-62143E40C2A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID" id="2EA3A393-3240-8998-C9B0-9E08A4022F6C">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:51:54 UTC</createdTime>
+<generatorID>9F672BED-8AE6-3AE2-4692-68B211973460</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="3A7E656C-51CA-9CE7-2467-62143E40C2A5" value="true"/>
+</engineerTo>
+<referedAttribute>A1748B73-01DF-09B2-50BB-B2B8E12575FD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="EC4FDCB2-E9AB-798B-7C71-BABF7C44EADF">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:51:55 UTC</createdTime>
+<generatorID>9F672BED-8AE6-3AE2-4692-68B211973460</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="3A7E656C-51CA-9CE7-2467-62143E40C2A5" value="true"/>
+</engineerTo>
+<referedAttribute>1838804B-651A-EE11-0592-B206829E1BF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="652BAB53-D304-476A-4D8D-7B30C5AD2F11" name="Kara PK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-04 22:02:35 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<engineerTo>
+<item key="3A7E656C-51CA-9CE7-2467-62143E40C2A5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2EA3A393-3240-8998-C9B0-9E08A4022F6C</attributeRef>
+<attributeRef>EC4FDCB2-E9AB-798B-7C71-BABF7C44EADF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="64054229-F09E-21AD-E7E6-BC0236ECF46B" name="Rezerwacja">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>28A53085-C7A4-9DBF-43A5-F264FF467140</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="53095BB5-84DF-BFFD-BA32-45DAB3DBC3E4">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>4B3CDC0C-ED24-2D8A-9FBD-025ACDB156B6</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_utworzenia" id="0D7A25E2-737D-C096-AFB7-09D9CB8E9985">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>E7841DC1-5376-DAE3-502C-DC84421FFF41</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_waznosci" id="F5C8AF83-5AAD-17D4-9BA9-F6020980EEC4">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>7CCF0E27-B8D0-6DDB-B47F-6C4CCE2268E5</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Wolumen_ID" id="5CE70503-3F33-D571-5821-F314B53296D4">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>2B5DD52C-5168-6954-26C2-82337793AF4A</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6CD59597-C41A-2799-7137-9E58516CC6D3" referredColumn="4C9B1830-9D91-39CD-1C89-E52B5DFED6DF"/>
+</associations>
+</Column>
+<Column name="Czytelnik_ID" id="BCC259AB-EE35-08D2-ACE1-466C0275E920">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 17:12:25 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3FFE020D-6F78-A173-DCD9-B90E20C44E29" referredColumn="9D4BBFF2-649D-B1EE-C550-9C76801C3E73"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF5D6699-F603-4623-EF2C-6F89F00EE081" name="Rezerwacja_PK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>7E144F98-487E-5EA9-24DC-C9A280497FAF</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53095BB5-84DF-BFFD-BA32-45DAB3DBC3E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3A4DC9A-3A37-0C75-29D4-C8BA2AF40FAC" name="Rezerwacja__IDX">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>DF1B0BA7-4171-FDE4-E765-93EC0D81CB0B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="5CE70503-3F33-D571-5821-F314B53296D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA47533F-0C9C-533C-5181-1DDD09E8793A" name="Rezerwacja__IDXv1">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2017-01-08 20:16:14 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D7A25E2-737D-C096-AFB7-09D9CB8E9985"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D8B6DAA-9D15-8753-7DD2-009166370A32" name="Rezerwacja__IDXv3">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2017-01-08 20:16:14 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCC259AB-EE35-08D2-ACE1-466C0275E920"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91969A1F-868F-A560-7B55-DDC6AF95D71E" name="Rezerwacja_Czytelnik_FK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>450A5AFE-B866-1F81-8921-5B01CA7EE8BD</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCC259AB-EE35-08D2-ACE1-466C0275E920"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6D9F18D-8E40-47E3-95EB-A76221CB0B58" name="Rezerwacja_Wolumen_FK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>DF1B0BA7-4171-FDE4-E765-93EC0D81CB0B</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CE70503-3F33-D571-5821-F314B53296D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

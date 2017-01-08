@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B44ACD08-68F8-7FA5-94AD-800EE33F9C0B" name="Dzial">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>7E6541A7-FCB2-9365-7D71-0C54805B39EA</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="322E81D5-3408-A9BF-06F8-4CF30AE51DDB">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>E3907012-8213-B607-10B8-BF7E33E05183</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="8BE2889B-3D20-8A98-3270-55EC1D550B4D">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>77F763F1-0FAD-7F0A-874D-4DFBA12BD1AE</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="87FA2DE5-A099-5CF3-F045-D2F001203B3D" name="Dzial_PK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:07 UTC</createdTime>
+<generatorID>ACD272A5-8D81-82A4-3734-27EFC94C8591</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="322E81D5-3408-A9BF-06F8-4CF30AE51DDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A45EC550-867B-C992-3B58-00617FAA9CC2" name="Dzial__IDX">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2017-01-08 20:10:08 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="322E81D5-3408-A9BF-06F8-4CF30AE51DDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

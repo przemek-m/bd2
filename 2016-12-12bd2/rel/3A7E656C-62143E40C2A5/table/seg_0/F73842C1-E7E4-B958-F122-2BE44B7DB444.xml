@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F73842C1-E7E4-B958-F122-2BE44B7DB444" name="Pozycja_Autorzy">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<ordsAlias>relation_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Pozycja_ID" id="6E3CAFD5-EAA6-2393-4AFF-19D4382F9C65">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2928F1D-86CE-C702-E21A-BA156C9FFB23" referredColumn="31DDDD0E-2F76-EADE-61CE-AFF8C2C78D9A"/>
+</associations>
+</Column>
+<Column name="Autor_ID" id="1DD84F4A-3299-3616-CB26-F5D70BA0C1D5">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61699814-027C-DFE9-7174-8772082FFE52" referredColumn="215E58CD-FE08-9472-ED70-1E4B8C470DDB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="09067000-D3E7-071C-0328-9FB4F4B1BE58" name="Relation_1_PK">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E3CAFD5-EAA6-2393-4AFF-19D4382F9C65"/>
+<colUsage columnID="1DD84F4A-3299-3616-CB26-F5D70BA0C1D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="93AC45BC-15A7-8541-0B47-7FCDB9C56F1B" name="FK_ASS_1">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>5BF25C79-B9FE-92B7-6FF5-368D23971834</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E3CAFD5-EAA6-2393-4AFF-19D4382F9C65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D0518A1-CC71-492D-7522-F4D064515D93" name="FK_ASS_2">
+<createdBy>Przemek_2</createdBy>
+<createdTime>2016-12-12 16:59:08 UTC</createdTime>
+<generatorID>5BF25C79-B9FE-92B7-6FF5-368D23971834</generatorID>
+<ownerDesignName>2016-12-12bd2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DD84F4A-3299-3616-CB26-F5D70BA0C1D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
