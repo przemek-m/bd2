@@ -4,7 +4,7 @@
 <createdTime>2016-12-12 16:59:08 UTC</createdTime>
 <generatorID>4281329A-3AA4-9602-2B24-3C2EDC5F7C8A</generatorID>
 <ownerDesignName>2016-12-12bd2</ownerDesignName>
-<deleteRule>NO ACTION</deleteRule>
+<deleteRule>CASCADE</deleteRule>
 <referredTableID>B44ACD08-68F8-7FA5-94AD-800EE33F9C0B</referredTableID>
 <keyObject>87FA2DE5-A099-5CF3-F045-D2F001203B3D</keyObject>
 <referredKeyID>87FA2DE5-A099-5CF3-F045-D2F001203B3D</referredKeyID>

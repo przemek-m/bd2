@@ -1,3 +1,4 @@
+import datetime
 from random import randint
 from faker import Factory
 fake = Factory.create('pl_PL')
@@ -9,6 +10,7 @@ N_Pozycja = 100
 N_Seria = 10
 N_Wolumen = N_Pozycja * 3
 N_Czytelnik = 10
+N_Wypozyczenie = 100
 
 
 def autor():
@@ -88,6 +90,17 @@ def dane_czytelnika():
                 ))
 
 
+def wypozyczenie():
+    with open("wypozyczenie.sql", "w") as f:
+        for i in range(1, N_Wypozyczenie+1):
+            date = datetime.datetime.now() - datetime.timedelta(days=randint(0,700))
+            due_date = date + datetime.timedelta(days=30)
+            return_date = date + datetime.timedelta(days=randint(1,60))
+            f.write(
+                "insert into Wypozyczenie (ID, data, termin_zwrotu, data_zwrotu, Wolumen_ID, Czytelnik_ID) values ({}, \'{}\', \'{}\', \'{}\', {}, {});\n".format(
+                    i, date, due_date, return_date, randint(1,N_Wolumen+1), randint(1,N_Czytelnik+1), i
+                ))
+
 
 def generate():
     autor()
@@ -98,3 +111,7 @@ def generate():
     wolumen()
     czytelnik()
     dane_czytelnika()
+    wypozyczenie()
+
+
+generate()

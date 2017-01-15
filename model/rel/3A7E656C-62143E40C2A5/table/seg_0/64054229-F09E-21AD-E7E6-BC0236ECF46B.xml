@@ -88,7 +88,6 @@
 <createdBy>Przemek_2</createdBy>
 <createdTime>2016-12-12 16:59:08 UTC</createdTime>
 <ownerDesignName>2016-12-12bd2</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <relationGeneratorID>DF1B0BA7-4171-FDE4-E765-93EC0D81CB0B</relationGeneratorID>
 <indexColumnUsage>
