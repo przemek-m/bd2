@@ -46,6 +46,7 @@
 <createdTime>2016-12-12 16:59:08 UTC</createdTime>
 <generatorID>851246DE-7D14-2095-9708-5AA637CB5E01</generatorID>
 <ownerDesignName>2016-12-12bd2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT008</logicalDatatype>
