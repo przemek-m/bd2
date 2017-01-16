@@ -4,13 +4,13 @@ from faker import Factory
 fake = Factory.create('pl_PL')
 
 
-N_Autor = 50
+N_Autor = 500
 N_Dzial = 20
-N_Pozycja = 100
-N_Seria = 10
-N_Wolumen = N_Pozycja * 3
-N_Czytelnik = 100
-N_Wypozyczenie = 1000
+N_Pozycja = 1000
+N_Seria = 100
+N_Wolumen = N_Pozycja * 4
+N_Czytelnik = 10000
+N_Wypozyczenie = 10000
 
 
 def autor():
@@ -21,6 +21,8 @@ def autor():
                 "insert into Autor (ID, nazwa) values ({}, \'{}\');\n".format(
                     i, fake.name()
                 ))
+            if i % 900 == 0:
+                f.write("COMMIT;\n")
         f.write("COMMIT;\n")
 
 
@@ -43,6 +45,8 @@ def pozycja():
                 "insert into Pozycja (ID, nazwa, okladka, Dzial_ID) values ({}, \'{}\', \'{}.jpg\', {});\n".format(
                     i, fake.text(max_nb_chars=35), i, randint(1, N_Dzial)
                 ))
+            if i % 900 == 0:
+                f.write("COMMIT;\n")
         f.write("COMMIT;\n")
 
 
@@ -54,6 +58,8 @@ def pozycja_autorzy():
                 "insert into Pozycja_Autorzy (Pozycja_ID, Autor_ID) values ({}, {});\n".format(
                     i, randint(1, N_Autor)
                 ))
+            if i % 900 == 0:
+                f.write("COMMIT;\n")
         f.write("COMMIT;\n")
 
 
@@ -76,11 +82,16 @@ def wolumen():
                 "insert into Wolumen (ID, Pozycja_ID, Seria_ID) values ({}, {}, {});\n".format(
                     i, i, randint(1, N_Seria)
                 ))
+            if i % 900 == 0:
+                f.write("COMMIT;\n")
+        f.write("COMMIT;\n")
         for i in range(N_Pozycja, N_Wolumen+1):
             f.write(
                 "insert into Wolumen (ID, Pozycja_ID, Seria_ID) values ({}, {}, {});\n".format(
                     i, randint(1, N_Pozycja), randint(1, N_Seria)
                 ))
+            if i % 900 == 0:
+                f.write("COMMIT;\n")
         f.write("COMMIT;\n")
 
 
@@ -92,6 +103,8 @@ def czytelnik():
                 "insert into Czytelnik (ID, imie, nazwisko, email, haslo) values ({}, \'{}\', \'{}\', \'{}\', \'{}\');\n".format(
                     i, fake.first_name(), fake.last_name(), fake.email(), fake.word()
                 ))
+            if i % 900 == 0:
+                f.write("COMMIT;\n")
         f.write("COMMIT;\n")
 
 
@@ -103,6 +116,8 @@ def dane_czytelnika():
                 "insert into DaneCzytelnika (kod_pocztowy, miasto, ulica, numer_budynku, numer_lokalu, Czytelnik_ID) values (\'{}\', \'{}\', \'{}\', {}, {}, {});\n".format(
                     fake.postcode(), fake.city(), fake.street_name(), randint(1,100), randint(1,100), i
                 ))
+            if i % 900 == 0:
+                f.write("COMMIT;\n")
         f.write("COMMIT;\n")
 
 
@@ -117,6 +132,8 @@ def wypozyczenie():
                 "insert into Wypozyczenie (ID, data, termin_zwrotu, data_zwrotu, Wolumen_ID, Czytelnik_ID) values ({}, \'{}\', \'{}\', \'{}\', {}, {});\n".format(
                     i, date, due_date, return_date, randint(1,N_Wolumen), randint(1,N_Czytelnik), i
                 ))
+            if i % 900 == 0:
+                f.write("COMMIT;\n")
         f.write("COMMIT;\n")
 
 
