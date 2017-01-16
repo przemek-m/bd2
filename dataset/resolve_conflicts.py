@@ -6,7 +6,6 @@ it's only a draft, but it works
 import MySQLdb
 import datetime
 
-f = '%Y-%m-%d %H:%M:%S'
 
 conn = MySQLdb.connect(user="root", database="bd3")
 
@@ -20,9 +19,6 @@ multiples = set()
 for row in cursor:
     if(row[0] > 1):
         multiples.add(row[1])
-
-
-print(multiples)
 
 
 def find_conflicts(rows):
@@ -48,7 +44,9 @@ for m in multiples:  # every wolumen
     to_delete_ids += find_conflicts(rows)
 
 with open("conflicts.sql", "w") as f:
+    f.write("SET autocommit=0;\n")
     for i in to_delete_ids:
         f.write("delete from Wypozyczenie where ID={};\n".format(i))
+    f.write("COMMIT;")
 
 conn.close()

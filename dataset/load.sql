@@ -1,0 +1,12 @@
+SET FOREIGN_KEY_CHECKS=0;
+SOURCE autor.sql
+SOURCE czytelnik.sql
+SOURCE dane_czytelnika.sql
+SOURCE dzial.sql
+SOURCE pozycja_autorzy.sql
+SOURCE pozycja.sql
+SOURCE seria.sql
+SOURCE wolumen.sql
+SOURCE wypozyczenie.sql
+SOURCE conflicts.sql
+SET FOREIGN_KEY_CHECKS=1;
