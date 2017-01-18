@@ -47,6 +47,8 @@ with open("conflicts.sql", "w") as f:
     f.write("SET autocommit=0;\n")
     for i in to_delete_ids:
         f.write("delete from Wypozyczenie where ID={};\n".format(i))
+        if i % 900 == 0:
+            f.write("COMMIT;\n")
     f.write("COMMIT;")
 
 conn.close()

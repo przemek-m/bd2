@@ -4,13 +4,13 @@ from faker import Factory
 fake = Factory.create('pl_PL')
 
 
-N_Autor = 500
-N_Dzial = 20
-N_Pozycja = 1000
-N_Seria = 100
+N_Autor = 5000
+N_Dzial = 100
+N_Pozycja = 100000
+N_Seria = 1000
 N_Wolumen = N_Pozycja * 4
 N_Czytelnik = 10000
-N_Wypozyczenie = 10000
+N_Wypozyczenie = 100000
 
 
 def autor():
